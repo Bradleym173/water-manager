@@ -1,4 +1,13 @@
-basic.showIcon(IconNames.Heart)
 basic.forever(function () {
-    basic.showIcon(IconNames.SmallHeart)
+    while (input.temperature() >= 15) {
+        basic.showLeds(`
+            . . . . #
+            # # # # #
+            . . . # .
+            # . . # .
+            . # . # .
+            `)
+        basic.pause(100)
+        basic.clearScreen()
+    }
 })
