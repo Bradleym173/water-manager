@@ -1,5 +1,5 @@
 {
-    "name": "water ",
+    "name": "water manager",
     "description": "",
     "dependencies": {
         "core": "*",
