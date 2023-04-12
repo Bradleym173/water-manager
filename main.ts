@@ -1,4 +1,7 @@
 /**
+ * Needs Work
+ */
+/**
  * 1 = Male
  * 
  * 2 = Female
@@ -6,7 +9,6 @@
 let Age = 0
 let Water_Wait = 0
 let Gender = 0
-basic.showString("A = Male B=Female")
 while (Gender == 0) {
     if (input.buttonIsPressed(Button.A)) {
         Gender = 1
@@ -23,53 +25,49 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
-    if (Age <= 70 && Gender == 1) {
-        basic.showLeds(`
-            . . . . .
-            . . . . #
-            # . . # .
-            . # # . .
-            . . . . .
-            `)
-        if (Age <= 19 && Gender == 1) {
-            basic.showLeds(`
-                . # . . .
-                . # . . #
-                # . # # .
-                . # # . .
-                . . . . .
-                `)
-            if (Age <= 14 && Gender == 1) {
-                basic.showLeds(`
-                    . . . . #
-                    . . . . #
-                    # . . # .
-                    . # # # .
-                    . . . . #
-                    `)
-            }
-        }
-    }
-})
-/**
- * Needs Work
- */
-basic.forever(function () {
-    if (Gender == 1) {
-        basic.showString("Enter AGE")
-        while (input.buttonIsPressed(Button.A)) {
+    if (Gender == 1 || Gender == 2) {
+        if (input.buttonIsPressed(Button.A)) {
+            basic.clearScreen()
             Age += 1
             basic.showString("" + (Age))
         }
-        while (input.buttonIsPressed(Button.B)) {
+        if (input.buttonIsPressed(Button.B)) {
+            basic.clearScreen()
             Age += -1
             basic.showString("" + (Age))
         }
         while (input.buttonIsPressed(Button.AB)) {
             basic.clearScreen()
+            if (Age <= 70 && Gender == 1) {
+                basic.showLeds(`
+                    . . . . .
+                    . . . . #
+                    # . . # .
+                    . # # . .
+                    . . . . .
+                    `)
+                if (Age <= 19 && Gender == 1) {
+                    basic.showLeds(`
+                        . # . . .
+                        . # . . #
+                        # . # # .
+                        . # # . .
+                        . . . . .
+                        `)
+                    if (Age <= 14 && Gender == 1) {
+                        basic.showLeds(`
+                            . . . . #
+                            . . . . #
+                            # . . # .
+                            . # # # .
+                            . . . . #
+                            `)
+                    }
+                }
+            }
         }
-        basic.pause(5000)
-        basic.pause(5000)
-        basic.pause(5000)
     }
+})
+basic.forever(function () {
+	
 })
