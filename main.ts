@@ -22,6 +22,9 @@
  * 
  * 9=8- female
  */
+input.onPinPressed(TouchPin.P0, function () {
+	
+})
 /**
  * 1 = Male
  * 
@@ -119,8 +122,48 @@ basic.forever(function () {
         for (let index = 0; index < 1080; index++) {
             basic.pause(5000)
         }
-        music.playMelody("C5 F G C F E A C ", 203)
-        music.playMelody("C5 F G C F E A C ", 203)
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 3) {
+        for (let index = 0; index < 1260; index++) {
+            basic.pause(5000)
+        }
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 4) {
+        for (let index = 0; index < 1440; index++) {
+            basic.pause(5000)
+        }
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 5) {
+        for (let index = 0; index < 3600; index++) {
+            basic.pause(5000)
+        }
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 6) {
+        for (let index = 0; index < 1440; index++) {
+            basic.pause(5000)
+        }
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 7) {
+        for (let index = 0; index < 1620; index++) {
+            basic.pause(5000)
+        }
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 8) {
+        for (let index = 0; index < 2160; index++) {
+            basic.pause(5000)
+        }
+        basic.showString("Drink 1 cup of water")
+    }
+    if (Ready == 9) {
+        for (let index = 0; index < 3600; index++) {
+            basic.pause(5000)
+        }
         basic.showString("Drink 1 cup of water")
     }
 })
