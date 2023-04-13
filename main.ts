@@ -1,7 +1,4 @@
 /**
- * 16 hours awake
- */
-/**
  * Ready
  * 
  * 1=no
@@ -21,6 +18,9 @@
  * 8=14-9 female
  * 
  * 9=8- female
+ */
+/**
+ * 16 hours awake
  */
 input.onPinPressed(TouchPin.P0, function () {
 	
