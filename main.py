@@ -1,10 +1,5 @@
 """
 
-16 hours awake
-
-"""
-"""
-
 Ready
 
 1=no
@@ -26,6 +21,16 @@ Ready
 9=8- female
 
 """
+"""
+
+16 hours awake
+
+"""
+
+def on_pin_pressed_p0():
+    pass
+input.on_pin_pressed(TouchPin.P0, on_pin_pressed_p0)
+
 """
 
 1 = Male
@@ -107,7 +112,33 @@ def on_forever4():
     if Ready == 2:
         for index2 in range(1080):
             basic.pause(5000)
-        music.play_melody("C5 F G C F E A C ", 203)
-        music.play_melody("C5 F G C F E A C ", 203)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 3:
+        for index3 in range(1260):
+            basic.pause(5000)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 4:
+        for index4 in range(1440):
+            basic.pause(5000)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 5:
+        for index5 in range(3600):
+            basic.pause(5000)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 6:
+        for index6 in range(1440):
+            basic.pause(5000)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 7:
+        for index7 in range(1620):
+            basic.pause(5000)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 8:
+        for index8 in range(2160):
+            basic.pause(5000)
+        basic.show_string("Drink 1 cup of water")
+    if Ready == 9:
+        for index9 in range(3600):
+            basic.pause(5000)
         basic.show_string("Drink 1 cup of water")
 basic.forever(on_forever4)
