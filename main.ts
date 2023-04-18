@@ -1,4 +1,9 @@
 /**
+ * 1 = Male
+ * 
+ * 2 = Female
+ */
+/**
  * Ready
  * 
  * 1=no
@@ -25,11 +30,6 @@
 input.onPinPressed(TouchPin.P0, function () {
 	
 })
-/**
- * 1 = Male
- * 
- * 2 = Female
- */
 let Water_Wait = 0
 let Age = 0
 let Gender = 0
